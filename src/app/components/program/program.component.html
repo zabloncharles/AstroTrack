@@ -1,0 +1,35 @@
+<div class="p-grid">
+  <p-panel header="Explore all SpaceX launches">
+    <p>
+      Welcome to our comprehensive SpaceX Rocket Launch Tracker! Dive into the exciting world of space exploration with
+      our
+      user-friendly platform, offering a wealth of information on past, present, and future SpaceX missions. Explore
+      detailed
+      launch profiles, including mission descriptions, launch dates, rocket specifications, and success or failure
+      statuses.
+      Utilize our intuitive search and filtering options to effortlessly navigate through the extensive database of
+      launches,
+      allowing you to discover launches by date, mission name, or outcome. Whether you're a space enthusiast,
+      researcher, or
+      simply curious about SpaceX's remarkable achievements, our website provides a captivating experience for all.
+    </p>
+  </p-panel>
+  <!-- the filter list card -->
+  <!-- p-col-12 p-lg-3 -->
+  <div class="panel">
+    <sxp-program-filter (selectedLaunchYear)="onProgramYearChange($event)" (successfulLaunch)="onLaunchChange($event)"
+      (successfulLanding)="onLandingChange($event)">
+    </sxp-program-filter>
+  </div>
+  <!-- <div class="p-col-12 p-lg-9"> -->
+  <!-- Right grid with lauch cards -->
+  <sxp-program-list [launchYear]="selectedProgramYear" [successfulLanding]="successfulLanding"
+    [successfulLaunch]="successfulLaunch">
+  </sxp-program-list>
+  <!-- </div> -->
+</div>
+
+
+
+
+<!-- the grid left and right with cards -->

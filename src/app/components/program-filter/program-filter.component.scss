@@ -1,0 +1,48 @@
+@import "../../../assets/styles/variables";
+
+:host {
+  ul {
+    padding: 0;
+    margin: 0;
+    font-family: "Spline Sans Mono", sans-serif;
+  }
+
+  li {
+    list-style: none;
+    font-size: 16px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 0.5rem;
+    font-family: "Spline Sans Mono", sans-serif;
+  }
+  p {
+    font-family: "Spline Sans Mono", sans-serif !important;
+  }
+
+  span {
+    background-color: $sxp-color-green-300;
+    padding: 0.3rem 1.5rem;
+    cursor: pointer;
+    font-weight: bold;
+    transition: all 0.2s ease;
+    font-size: 0.7rem;
+    border-radius: 0.5rem;
+  }
+
+  input {
+    display: none;
+  }
+
+  input:checked + span {
+    background: $sxp-color-green-800;
+  }
+}
+
+.year {
+  margin: 14px;
+  font-size: 16px;
+}
+.fonty {
+  font-family: "Spline Sans Mono", sans-serif;
+}

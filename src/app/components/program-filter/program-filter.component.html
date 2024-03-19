@@ -1,0 +1,62 @@
+<p-panel header="Filters" class="fonty" [toggleable]="true" [collapsed]="true">
+  <div class="p-col-12 p-lg-9">
+    <h5 class="p-m-0">Launch Year</h5>
+  </div>
+
+  <div class="p-grid">
+    <ul style="width: 100%">
+      <li class="year" *ngFor="let launchYear of launchYearList">
+        <label>
+          <input type="radio" name="launchYear" (change)="onSelectedYearChange($event, launchYear)"
+            [value]="launchYear" />
+          <span>{{launchYear}}</span>
+        </label>
+      </li>
+    </ul>
+  </div>
+
+
+  <div class="p-grid p-align-start p-dir-col p-p-1 p-mt-5">
+    <h5 class="p-m-0">Successful Launch</h5>
+  </div>
+
+  <div class="p-grid">
+    <ul style="width: 100%">
+      <li class="year">
+        <label>
+          <input type="radio" name="successfulLaunch" (change)="onLaunchChange($event, true)" [value]="true" />
+          <span>True</span>
+        </label>
+      </li>
+
+      <li class="year">
+        <label>
+          <input type="radio" name="successfulLaunch" (change)="onLaunchChange($event, false)" [value]="false" />
+          <span>False</span>
+        </label>
+      </li>
+    </ul>
+  </div>
+
+  <div class="p-grid p-align-start p-dir-col p-p-1 p-mt-5">
+    <h5 class="p-m-0">Successful Landing</h5>
+  </div>
+
+  <div class="p-grid">
+    <ul style="width: 100%">
+      <li class="year">
+        <label>
+          <input type="radio" name="successfulLanding" (change)="onLandingChange($event, true)" [value]="true" />
+          <span>True</span>
+        </label>
+      </li>
+
+      <li class="year">
+        <label>
+          <input type="radio" name="successfulLanding" (change)="onLandingChange($event, false)" [value]="false" />
+          <span>False</span>
+        </label>
+      </li>
+    </ul>
+  </div>
+</p-panel>

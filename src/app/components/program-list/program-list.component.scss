@@ -1,0 +1,49 @@
+@import "../../../assets/styles/variables";
+@import url("https://fonts.cdnfonts.com/css/spline-sans-mono");
+@keyframes slideInFromLeft {
+  0% {
+    transform: scale(0.2, 0.2);
+  }
+
+  100% {
+    transform: scale(1, 1);
+  }
+}
+
+.program-list-component {
+  max-height: calc(100vh - 8rem);
+  overflow: visible;
+  font-family: "Spline Sans Mono", sans-serif;
+}
+
+.program-list-item {
+  animation: slideInFromLeft 2s forwards;
+}
+
+.fonty {
+  font-family: "Spline Sans Mono", sans-serif;
+}
+.card-image {
+  background: #141414;
+  padding: 1rem;
+  border: 10px solid $sxp-color-white;
+  border-radius: 19px;
+  font-family: "Spline Sans Mono", sans-serif;
+}
+
+.program-item-value {
+  font-weight: 400;
+  font-family: "Spline Sans Mono", sans-serif;
+}
+
+:host {
+  ::ng-deep {
+    .p-card .p-card-body {
+      padding: 0 1rem;
+    }
+
+    .p-card .p-card-content {
+      padding: 0.5rem 0 1rem 0;
+    }
+  }
+}

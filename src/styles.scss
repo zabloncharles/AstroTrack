@@ -1,0 +1,12 @@
+// SpaceXProgram custom scss variables
+@import "assets/styles/variables";
+
+body {
+  background-color: #000000;
+  font-family: $font-family;
+
+  max-width: 1234px;
+
+  display: flex;
+  justify-content: center;
+}
