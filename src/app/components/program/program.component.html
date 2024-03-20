@@ -1,25 +1,88 @@
 <div class="p-grid">
-  <p-panel header="Explore all SpaceX launches">
-    <p>
-      Welcome to our comprehensive SpaceX Rocket Launch Tracker! Dive into the exciting world of space exploration with
-      our
-      user-friendly platform, offering a wealth of information on past, present, and future SpaceX missions. Explore
-      detailed
-      launch profiles, including mission descriptions, launch dates, rocket specifications, and success or failure
-      statuses.
-      Utilize our intuitive search and filtering options to effortlessly navigate through the extensive database of
-      launches,
-      allowing you to discover launches by date, mission name, or outcome. Whether you're a space enthusiast,
-      researcher, or
-      simply curious about SpaceX's remarkable achievements, our website provides a captivating experience for all.
-    </p>
-  </p-panel>
+
+  <div class="top">
+    <div class="description">
+      <h1 class="code">Solar System</h1>
+      <hr>
+      <p>
+        I'm a space and physics lover, and I wanted to create a place for rockets and <code>space stuff :)</code>
+      </p>
+      <p>
+        Here is a true time scaled solar-system, which means that every objects have a time relative to an Earth year.
+
+        <!-- <code>$year-in-second</code> -->
+        <!-- variable to increase the speed of revolutions. Here 1 year = 30 seconds. -->
+      </p>
+
+      <hr>
+
+
+    </div>
+
+    <div class="solar-syst">
+      <div class="sun"></div>
+      <div class="mercury"></div>
+      <div class="venus"></div>
+      <div class="earth"></div>
+      <div class="mars"></div>
+      <div class="jupiter"></div>
+      <div class="saturn"></div>
+      <div class="uranus"></div>
+      <div class="neptune"></div>
+      <div class="pluto"></div>
+      <div class="asteroids-belt"></div>
+    </div>
+
+
+    <div class="right-float">
+      <p>
+        Learn about space and space X launches and get stat data. P.s. Will add these articles soon :}
+      </p>
+      <div class="point"></div>
+    </div>
+
+  </div>
+  <div class="header-text">
+    <div></div>
+    Welcome to our comprehensive SpaceX Rocket Launch Tracker! Dive into the exciting world of space exploration with
+    our
+    user-friendly platform, offering a wealth of information on past, present, and future SpaceX missions. Explore
+    detailed
+    launch profiles, including mission descriptions, launch dates, rocket specifications, and success or failure
+    statuses.
+    Utilize our intuitive search and filtering options to effortlessly navigate through the extensive database of
+    launches,
+    allowing you to discover launches by date, mission name, or outcome. Whether you're a space enthusiast,
+    researcher, or
+    simply curious about SpaceX's remarkable achievements, our website provides a captivating experience for all.
+
+
+
+  </div>
   <!-- the filter list card -->
   <!-- p-col-12 p-lg-3 -->
+  <div class="sxp-program">
+    <h2>Program Filters</h2>
+    <!-- Toggleable Div -->
+    <div class="toggle-container">
+      <div class="toggle-header" (click)="toggleContent()">
+        <div>Filter Space Launches</div>
+        <div></div>
+      </div>
+      <div *ngIf="isVisible" class="toggle-content">
+        <sxp-program-filter (selectedLaunchYear)="onProgramYearChange($event)"
+          (successfulLaunch)="onLaunchChange($event)" (successfulLanding)="onLandingChange($event)">
+        </sxp-program-filter>
+      </div>
+    </div>
+  </div>
+
+
+
+
+
   <div class="panel">
-    <sxp-program-filter (selectedLaunchYear)="onProgramYearChange($event)" (successfulLaunch)="onLaunchChange($event)"
-      (successfulLanding)="onLandingChange($event)">
-    </sxp-program-filter>
+
   </div>
   <!-- <div class="p-col-12 p-lg-9"> -->
   <!-- Right grid with lauch cards -->

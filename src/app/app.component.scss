@@ -16,7 +16,7 @@
 
   color: white;
   font-size: 25px;
-  border: 1px solid rgb(20, 20, 27);
+  border: 1px solid rgba(20, 20, 27, 0.64);
   position: fixed;
   top: 51px;
   z-index: 99;
@@ -44,7 +44,15 @@
   }
   .logo {
     font-family: "Spline Sans Mono", sans-serif;
-    padding-left: 4px;
+
+    height: 31px;
+    width: 233px;
+    background-image: url(../astro-name.png);
+    background-size: contain;
+    background-position: center center;
+    background-repeat: no-repeat;
+    position: absolute;
+    left: 29px;
   }
 
   .burger {
@@ -55,7 +63,7 @@
     background-size: cover;
     background-position: center center;
     cursor: pointer;
-    margin-right: 6px;
+    margin-right: 3px;
   }
 }
 

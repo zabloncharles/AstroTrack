@@ -21,12 +21,13 @@
   }
 
   span {
-    background-color: $sxp-color-green-300;
+    background-color: #141414;
     padding: 0.3rem 1.5rem;
+    color: white;
     cursor: pointer;
     font-weight: bold;
     transition: all 0.2s ease;
-    font-size: 0.7rem;
+    font-size: 0.9rem;
     border-radius: 0.5rem;
   }
 
@@ -37,6 +38,10 @@
   input:checked + span {
     background: $sxp-color-green-800;
   }
+
+  p-panel {
+    background-color: red;
+  }
 }
 
 .year {
@@ -45,4 +50,5 @@
 }
 .fonty {
   font-family: "Spline Sans Mono", sans-serif;
+  background-color: red;
 }
