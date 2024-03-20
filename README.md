@@ -8,9 +8,6 @@ This is a front-end application to explore space launches by nasa and space x. I
 ## Project Preview
 
 
-# Live Link [HiveArcade](https://hivearcade.netlify.app/).
-
-
 #### Live Preview Screenshot - Desktop
 
 
