@@ -8,7 +8,7 @@ This is a front-end application to explore space launches by nasa and space x. I
 ## Project Preview
 
 
-
+# Live Link [HiveArcade](https://hivearcade.netlify.app/).
 
 
 #### Live Preview Screenshot - Desktop
@@ -60,3 +60,6 @@ Driven by a passion for innovation and discovery, this project continually evolv
 
 * Run command `npm run start` to run the project
 * Run command `npm run lint` to test linting issues
+* 
+## About the Author
+made with love 💖 by @zabloncharles
