@@ -51,7 +51,7 @@ Driven by a passion for innovation and discovery, this project continually evolv
 
 ## Project Setup
 
-* Clone repository - `https://github.com/abhishekk-raj/SpaceXProgram.git`
+* Clone repository - `https://github.com/zabloncharles/astrotrack.git`
 * Goto project directory - `cd SpaceXProgram`
 * Install dependencies - `npm install`
 
