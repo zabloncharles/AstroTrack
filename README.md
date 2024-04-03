@@ -16,10 +16,10 @@ This is a front-end application to explore space launches by nasa and space x. I
 
 
 
+<img width="1506" alt="astrotrack1" src="https://github.com/zabloncharles/AstroTrack/assets/74889517/6df69e09-ee41-46cd-9d2c-1943b7bf168b">
 
 
-<img width="1415" alt="Screen Shot 2024-03-19 at 8 28 24 PM" src="https://github.com/zabloncharles/AstroTrack/assets/74889517/ae04c2dc-0df1-422b-8aba-4f63f3f5feb4">
-<p style="center">
+
  This project serves as a comprehensive repository for space enthusiasts, providing a meticulously curated collection of launches, rocket missions, and space news from industry giants such as NASA and SpaceX. Delving into the depths of the cosmos, this platform offers a detailed overview of each rocket launch, highlighting the remarkable achievements of humanity's quest to conquer the final frontier.</p>
 
 #### Live Preview Screenshot - Desktop
